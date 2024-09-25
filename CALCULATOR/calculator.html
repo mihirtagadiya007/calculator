@@ -1,0 +1,37 @@
+<script>
+    function add(m, t) {
+      return m + t;
+    }
+    function mul(m, t) {
+      return m - t;
+    }
+    function sub(m, t) {
+      return m * t;
+    }
+    function div(m, t) {
+      return m / t;
+    }
+    function mod(m, t) {
+      return m % t;
+    }
+    var a = parseFloat(
+      prompt("1.ADDITION 2.MULTIPLICATION 3.SUBTRACTION 4.DIVISION 5.MODULO")
+    );
+    if (a <= 5) {
+      var m = parseFloat(prompt("enter any number 1st"));
+      var t = parseFloat(prompt("enter any number 2nd"));
+      if (a == 1) {
+        console.log(add(m, t));
+      } else if (a == 2) {
+        console.log(mul(m, t));
+      } else if (a == 3) {
+        console.log(sub(m, t));
+      } else if (a == 4) {
+        console.log(div(m, t));
+      } else if (a == 5) {
+        console.log(mod(m, t));
+      }
+    } else {
+      console.log("this number is not valid");
+    }
+  </script>
